@@ -166,8 +166,6 @@ fn main() {
         log::warn!("Could not determine extension ID!");
     }
 
-    log::trace!("Extension id: {}", extension_id.unwrap());
-
     // Read configuration
     let config_path = pref_dir.join("config.json");
     let config = read_configuration(&config_path);
