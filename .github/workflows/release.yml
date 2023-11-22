@@ -31,7 +31,7 @@ jobs:
         run: |
           sudo dpkg --add-architecture i386
           sudo apt-get update
-          sudo apt-get install gcc-multilib zlib1g-dev:i386 liblzma-dev:i386 libgcc1:i386 libgtk-3-dev:i386 librust-atk-dev:i386 -y
+          sudo apt-get install gcc-multilib zlib1g-dev:i386 liblzma-dev:i386 libgcc1:i386 libgtk-3-dev:i386 librust-atk-dev -y
       - name: Setup rust toolchain
         uses: actions-rs/toolchain@v1
         with:
