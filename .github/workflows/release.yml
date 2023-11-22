@@ -45,9 +45,7 @@ jobs:
 
       - uses: actions/checkout@v2
       - name: Build generic Linux binary
-        run: |
-          cargo install
-          cargo build --verbose --release
+        run: cargo build --verbose --release
       - name: Package Linux .deb
         run: cargo deb
       - name: Package Linux .rpm
