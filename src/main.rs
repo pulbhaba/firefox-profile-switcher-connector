@@ -161,6 +161,10 @@ fn main() {
 
     // Find extension ID
     let args: Vec<String> = env::args().collect();
+    log::trace!("Arguments passed ");
+    for i in env::args() {
+        log::trace!("{}, ", i);
+    }
     let extension_id = args.get(2);
     if extension_id.is_none() {
         log::warn!("Could not determine extension ID!");
